@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Awesome Store</h1>
+        <div class="cart-icon">
+            <span>Cart: 0</span>
+        </div>
+    </header>
+    <style>
+      /* Basic Setup */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.cart-icon {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: #555;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-card h2 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+}
+
+.product-card .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}
+    </style>
+
+    <main>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300" alt="Product Image">
+                <h2>Cool T-Shirt</h2>
+                <p class="price">$19.99</p>
+                <p>A very cool t-shirt that you will love to wear.</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300" alt="Product Image">
+                <h2>Fancy Mug</h2>
+                <p class="price">$12.50</p>
+                <p>Start your morning right with this fancy mug.</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300" alt="Product Image">
+                <h2>Running Shoes</h2>
+                <p class="price">$79.99</p>
+                <p>Run faster and look cooler with these shoes.</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </main>
+    <button
+    class="snipcart-add-item"
+    data-item-id="product-1"
+    data-item-price="19.99"
+    data-item-url="/index.html"
+    data-item-name="Cool T-Shirt">
+    Add to Cart
+</button>
+    <button>Add to Cart</button>
+
+    <footer>
+        <p>&copy; 2025 My Awesome Store</p>
+    </footer>
+
+</body>
+</html>
